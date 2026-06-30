@@ -3,13 +3,14 @@
 #  Perfiles: dev (local) y prod (Render)
 #  Activar con: SPRING_PROFILES_ACTIVE=dev  o  =prod
 # ════════════════════════════════════════════════════════════
-
 server:
   port: ${PORT:8082}
-  
+
 spring:
   application:
     name: ms-autenticacion
+  main:
+    allow-bean-definition-overriding: true
 
 # Registro en Eureka
 eureka:
